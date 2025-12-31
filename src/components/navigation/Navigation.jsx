@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 
 import { MAZE_ALGORITHMS, PATH_FINDER_ALGORITHMS } from "../../utils/constants";
 import MazeAnimToggle from "./MazeAnimToggle";
-import DropDown from "../dropdown/DropDown";
+import DropDown from "../dropdown/Dropdown";
 import GenerateMaze from "./GenerateMaze";
 import ClearGrid from "./ClearGrid";
 import FindPath from "./FindPath";
