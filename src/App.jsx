@@ -1,6 +1,6 @@
 import React from "react";
 
-import Visualization from "./pages/visualization";
+import Visualization from "./pages/Visualization";
 import NotAvailable from "./pages/NotAvailable";
 
 function App() {
