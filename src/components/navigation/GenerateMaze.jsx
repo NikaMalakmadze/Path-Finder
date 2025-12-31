@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from "react-redux";
+import { twMerge } from "tailwind-merge";
 
 import { MAZE_ALGORITHMS_FUNCS } from "../../utils/constants";
-import { updateGrid } from "../../redux/slices/grid";
-import { serializeGrid } from "../../utils/grid";
-import { twMerge } from "tailwind-merge";
 import { setIsAnimation } from "../../redux/slices/interface";
 import { clearAnalytics } from "../../redux/slices/analytics";
+import { updateGrid } from "../../redux/slices/grid";
+import { serializeGrid } from "../../utils/grid";
 
 function GenerateMaze() {
 	const dispatch = useDispatch();

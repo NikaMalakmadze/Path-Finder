@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-
-import { clearGrid } from "../../redux/slices/grid";
 import { twMerge } from "tailwind-merge";
+
 import { clearAnalytics } from "../../redux/slices/analytics";
+import { clearGrid } from "../../redux/slices/grid";
 
 function ClearGrid() {
 	const { isClear } = useSelector(state => state.gridSlice);

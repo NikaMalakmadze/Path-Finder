@@ -1,6 +1,6 @@
 import Navigation from "../components/navigation/Navigation";
 import Analytics from "../components/Analytics";
-import Grid from "../components/grid";
+import Grid from "../components/Grid";
 
 function Visualization() {
 	return (
