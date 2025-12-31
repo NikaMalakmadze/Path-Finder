@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+#root {
+	height: 100vh;
+	background-color: var(--color-gray-100);
+}
+
+@theme {
+	--animate-barrier: barrierAnimation 0.9s ease-in-out;
+	--animate-start: startCellAnimation 0.9s ease-in-out;
+	--animate-end: endCellAnimation 0.9s ease-in-out;
+	--animate-open: openCellAnimation 0.9s ease-in-out;
+	--animate-closed: closedCellAnimation 0.9s ease-in-out;
+	--animate-path: pathAnimation 0.9s ease-in-out;
+}
+
+@keyframes barrierAnimation {
+	10% {
+		transform: scale(0.7);
+		border-radius: 50%;
+		background-color: var(--color-pink-500);
+	}
+	30% {
+		background-color: var(--color-purple-400);
+		border-radius: 50%;
+		transform: scale(1.3);
+	}
+	70% {
+		transform: scale(0.85);
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: var(--color-blue-800);
+	}
+}
+
+@keyframes startCellAnimation {
+	10% {
+		transform: scale(0.7);
+		border-radius: 50%;
+		background-color: var(--color-green-700);
+	}
+	30% {
+		background-color: var(--color-green-400);
+		transform: scale(1.3);
+		border-radius: 50%;
+	}
+	70% {
+		transform: scale(0.85);
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: var(--color-green-500);
+	}
+}
+
+@keyframes endCellAnimation {
+	10% {
+		transform: scale(0.7);
+		border-radius: 50%;
+		background-color: var(--color-orange-600);
+	}
+	30% {
+		background-color: var(--color-yellow-500);
+		transform: scale(1.3);
+		border-radius: 50%;
+	}
+	70% {
+		transform: scale(0.85);
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: var(--color-orange-500);
+	}
+}
+
+@keyframes openCellAnimation {
+	10% {
+		transform: scale(0.7);
+		border-radius: 50%;
+		background-color: var(--color-rose-400);
+	}
+	30% {
+		background-color: var(--color-rose-500);
+		transform: scale(1.3);
+		border-radius: 50%;
+	}
+	70% {
+		transform: scale(0.85);
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: var(--color-rose-500);
+	}
+}
+
+@keyframes closedCellAnimation {
+	0% {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: var(--color-rose-500);
+	}
+	20% {
+		transform: scale(1.1);
+		border-radius: 30%;
+		background-color: var(--color-rose-400);
+	}
+	50% {
+		transform: scale(0.9);
+		background-color: var(--color-cyan-400);
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+		background-color: var(--color-cyan-500);
+	}
+}
+
+@keyframes pathAnimation {
+	0% {
+		transform: scale(0.6);
+		border-radius: 50%;
+		box-shadow: 0 0 0px var(--color-amber-300);
+		background-color: rgba(251, 191, 36, 0.3); /* amber-400 */
+	}
+	25% {
+		transform: scale(1.2);
+		box-shadow: 0 0 8px var(--color-amber-400);
+		background-color: rgba(251, 191, 36, 0.5);
+	}
+	50% {
+		transform: scale(0.95);
+		box-shadow: 0 0 6px var(--color-amber-500);
+		background-color: rgba(245, 158, 11, 0.7);
+	}
+	75% {
+		transform: scale(1.05);
+		box-shadow: 0 0 10px var(--color-amber-600);
+		background-color: rgba(217, 119, 6, 0.9);
+	}
+	100% {
+		transform: scale(1);
+		border-radius: 0;
+		box-shadow: none;
+		background-color: var(--color-amber-600);
+	}
+}
